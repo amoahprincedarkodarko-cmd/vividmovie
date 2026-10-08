@@ -1,0 +1,24 @@
+:root { --ink:#1c1917; --muted:#57534e; --paper:#f7f4ef; --card:#fff; --line:#e7e5e4; --brand:#9f1239; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--paper); color:var(--ink); font-family:Georgia, "Times New Roman", serif; }
+a { color:var(--brand); }
+.top { background:#1c1917; color:#faf7f2; display:flex; align-items:center; justify-content:space-between; gap:16px; padding:14px 6vw; position:sticky; top:0; }
+.brand { display:flex; align-items:center; gap:8px; color:white; font-weight:700; text-decoration:none; font-family:system-ui,sans-serif; }
+.brand img { height:40px; border-radius:8px; }
+nav, footer a, .links { display:flex; gap:14px; flex-wrap:wrap; font-family:system-ui,sans-serif; }
+nav a, footer a { color:#faf7f2; text-decoration:none; }
+.hero { background:#292524; color:#faf7f2; padding:54px 6vw; }
+.hero h1 { font-family:system-ui,sans-serif; font-size:clamp(36px,6vw,64px); margin:0 0 8px; letter-spacing:-.04em; }
+.wrap { width:min(1040px, calc(100% - 40px)); margin:0 auto; padding:32px 0 56px; }
+h2 { font-family:system-ui,sans-serif; letter-spacing:-.03em; }
+.cards { display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:14px; }
+.card { display:block; background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px; text-decoration:none; color:inherit; }
+.card strong { display:block; font-family:system-ui,sans-serif; margin-bottom:6px; }
+.card span, .muted { color:var(--muted); }
+.split { display:grid; grid-template-columns:1.2fr .8fr; gap:18px; }
+iframe { width:100%; min-height:420px; border:0; border-radius:12px; background:#111; }
+label { display:grid; gap:6px; margin:10px 0; font-family:system-ui,sans-serif; }
+input, textarea { width:100%; padding:10px; border-radius:10px; border:1px solid #d6d3d1; }
+button, .btn { display:inline-block; border:0; border-radius:999px; padding:12px 16px; background:var(--brand); color:white; font-weight:700; text-decoration:none; font-family:system-ui,sans-serif; }
+footer { background:#1c1917; color:#faf7f2; padding:22px 6vw 36px; }
+@media (max-width:800px) { .split { grid-template-columns:1fr; } }
